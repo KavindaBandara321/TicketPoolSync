@@ -17,7 +17,7 @@ public class Vendor implements Runnable {
     public void run() {
         int i = 1;
         while (running) {
-            Ticket ticket = new Ticket(" " + i++, vendorName, " Event");
+            Ticket ticket = new Ticket(" " + i++, vendorName, " Normal Event");
             ticketPool.addTicket(ticket);
             try {
                 Thread.sleep(1000);
